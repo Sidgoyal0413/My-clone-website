@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Projects</title>
+<link rel="stylesheet" href="work.css">
+</head>
+
+<body>
+
+<!-- LOGO (click → homepage) -->
+<a href="index.html">
+<img src="logo1.png" alt="Logo" class="logo">
+</a>
+
+<!-- MENU BUTTON -->
+<div class="menu-box">
+  <div class="line big"></div>
+  <div class="line small"></div>
+</div>
+
+<!-- FULLSCREEN NAV MENU -->
+<div class="menu-overlay" id="menuOverlay">
+
+  <div class="close-menu" id="closeMenu">✕</div>
+
+  <div class="menu-items">
+    <a href="work.html" class="menu-item">WORK</a>
+    <a href="agency.html" class="menu-item">AGENCY</a>
+    <a href="contact.html" class="menu-item">CONTACT</a>
+    <a href="blog.html" class="menu-item">BLOG</a>
+  </div>
+
+</div>
+
+
+<!-- HERO TITLE -->
+
+<section class="hero">
+<h1>WORK<span>17</span></h1>
+</section>
+
+
+<!-- PROJECT GRID -->
+
+<div class="container">
+
+<div class="card">
+<img src="1.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="1.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="2.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="2.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="3.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="3.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="4.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="4.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="5.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="5.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="1.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="1.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="1.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="1.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="1.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="2.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+<div class="card">
+<img src="2.jpeg">
+<div class="overlay"><div class="button">VIEW PROJECT</div></div>
+</div>
+
+</div>
+
+
+<!-- MENU SCRIPT -->
+
+<script>
+
+const menuBtn = document.querySelector(".menu-box");
+const menuOverlay = document.getElementById("menuOverlay");
+const closeMenu = document.getElementById("closeMenu");
+
+menuBtn.addEventListener("click", () => {
+  menuOverlay.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+  menuOverlay.classList.remove("active");
+});
+
+</script>
+
+</body>
+</html>  

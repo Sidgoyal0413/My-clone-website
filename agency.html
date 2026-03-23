@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K72 Agency</title>
+<link rel="stylesheet" href="agency.css">
+</head>
+
+<body>
+
+<!-- LOGO -->
+<a href="index.html">
+<img src="logo2.png" class="logo">
+</a>
+
+<!-- MENU BUTTON -->
+<div class="menu-box">
+<div class="line big"></div>
+<div class="line small"></div>
+</div>
+
+<!-- FULLSCREEN MENU -->
+<div class="menu-overlay" id="menuOverlay">
+
+<div class="close-menu" id="closeMenu">✕</div>
+
+<div class="menu-items">
+
+<div class="menu-item" onclick="window.location.href='work.html'">
+<span class="menu-label">WORK</span>
+
+<div class="hover-marquee">
+<div class="marquee-track">
+<span>SEE EVERYTHING</span>
+<img src="handbag.jpg">
+<span>SEE EVERYTHING</span>
+<img src="firstnav.png">
+<span>SEE EVERYTHING</span>
+<img src="handbag.jpg">
+<span>SEE EVERYTHING</span>
+<img src="firstnav.jpg">
+<span>SEE EVERYTHING</span>
+</div>
+</div>
+</div>
+
+
+<div class="menu-item" onclick="window.location.href='agency.html'">
+<span class="menu-label">AGENCY</span>
+
+<div class="hover-marquee">
+<div class="marquee-track">
+<span>KNOW US</span>
+<img src="img3.jpg">
+<span>KNOW US</span>
+<img src="img4.jpg">
+<span>KNOW US</span>
+<img src="img3.jpg">
+<span>KNOW US</span>
+<img src="img4.jpg">
+</div>
+</div>
+</div>
+
+
+<div class="menu-item" onclick="window.location.href='contact.html'">
+<span class="menu-label">CONTACT</span>
+
+<div class="hover-marquee">
+<div class="marquee-track">
+<span>SEND US A FAX</span>
+<img src="img6.png">
+<span>SEND US A FAX</span>
+<img src="img6.png">
+<span>SEND US A FAX</span>
+<img src="img6.png">
+</div>
+</div>
+</div>
+
+
+<div class="menu-item" onclick="window.location.href='blog.html'">
+<span class="menu-label">BLOG</span>
+
+<div class="hover-marquee">
+<div class="marquee-track">
+<span>READ ARTICLES</span>
+<img src="img7.jpg">
+<span>READ ARTICLES</span>
+<img src="persons.gif">
+<span>READ ARTICLES</span>
+<img src="img7.jpg">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<section class="hero">
+
+<h3 class="hero-text">
+SIXTY-<br>
+SEVENTH<br>
+TWELVE
+</h3>
+
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+</div>
+
+</section>
+
+
+<script>
+
+const menuBtn = document.querySelector(".menu-box");
+const menuOverlay = document.getElementById("menuOverlay");
+const closeMenu = document.getElementById("closeMenu");
+
+menuBtn.addEventListener("click", () => {
+menuOverlay.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+menuOverlay.classList.remove("active");
+});
+
+</script>
+
+</body>
+</html>
